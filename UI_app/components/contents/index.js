@@ -6,7 +6,11 @@ export const ContentLists = ({myListData}) => {
 
   return (
     <View style={styles.contentLists}>
-      <FlatList data={myListData} renderItem={ContentList} />
+      <FlatList
+        data={myListData}
+        renderItem={ContentList}
+        keyExtractor={listData => listData.id}
+      />
     </View>
   );
 };
@@ -15,7 +19,7 @@ const ContentList = listData => {
   return (
     <View style={styles.contentView}>
       <View style={styles.contentList}>
-        <Text>{listData.item.title}</Text>
+        <Text style={styles.listText}>{listData.item.title}</Text>
       </View>
     </View>
   );
@@ -23,15 +27,19 @@ const ContentList = listData => {
 
 const styles = StyleSheet.create({
   contentLists: {
-    flex: 1,
-    // backgroundColor: 'blue',
+    // flex: 1,
+    backgroundColor: 'blue',
   },
   contentView: {
-    flex: 1,
-    backgroundColor: 'green',
+    // flex: 1,
   },
   contentList: {
-    flex: 0.5,
-    backgroundColor: 'yellow',
+    // flex: 0.5,
+    // backgroundColor: 'yellow',
+    left: '40%',
+  },
+  listText: {
+    fontSize: 20,
+    marginTop: 50,
   },
 });

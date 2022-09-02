@@ -3,12 +3,6 @@ import {View, Text, StyleSheet} from 'react-native';
 import {ContentLists} from '../../components/contents';
 
 export const Content = () => {
-  //   const [listData, setListData] = useState(10);
-
-  //   const getListData = () => {
-  //     return listData;
-  //   };
-
   const myListData = [
     {
       id: 1,
@@ -28,6 +22,42 @@ export const Content = () => {
       subTitle: 'サブタイトル3',
       discription: '内容内容内容内容内容内容...',
     },
+    {
+      id: 4,
+      title: 'istData4',
+      subTitle: 'サブタイトル4',
+      discription: '内容内容内容内容内容内容...',
+    },
+    {
+      id: 5,
+      title: 'istData05',
+      subTitle: 'サブタイトル5',
+      discription: '内容内容内容内容内容内容...',
+    },
+    {
+      id: 6,
+      title: 'istData06',
+      subTitle: 'サブタイトル6',
+      discription: '内容内容内容内容内容内容...',
+    },
+    {
+      id: 7,
+      title: 'istData07',
+      subTitle: 'サブタイトル7',
+      discription: '内容内容内容内容内容内容...',
+    },
+    {
+      id: 8,
+      title: 'istData08',
+      subTitle: 'サブタイトル8',
+      discription: '内容内容内容内容内容内容...',
+    },
+    {
+      id: 9,
+      title: 'istData09',
+      subTitle: 'サブタイトル9',
+      discription: '内容内容内容内容内容内容...',
+    },
   ];
 
   return (
@@ -40,5 +70,7 @@ export const Content = () => {
 const styles = StyleSheet.create({
   content: {
     flex: 1,
+    justifyContent: 'center',
+    // alignItems: 'center',
   },
 });
