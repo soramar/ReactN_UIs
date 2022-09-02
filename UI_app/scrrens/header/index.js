@@ -11,7 +11,7 @@ export const Header = () => {
 
 const styles = StyleSheet.create({
   header: {
-    flex: 0.2,
+    flex: 0.15,
     backgroundColor: 'cornsilk',
   },
 });

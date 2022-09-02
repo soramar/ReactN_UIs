@@ -11,7 +11,7 @@ export const Footer = () => {
 
 const styles = StyleSheet.create({
   footer: {
-    flex: 0.8,
+    flex: 0.15,
     backgroundColor: 'azure',
   },
 });
