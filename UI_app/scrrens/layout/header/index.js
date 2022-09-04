@@ -12,6 +12,8 @@ export const Header = () => {
 const styles = StyleSheet.create({
   header: {
     flex: 0.15,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'cornsilk',
   },
 });

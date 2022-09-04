@@ -1,9 +1,8 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import { ListButton } from '../../../../components/contents/ListComponent/ListButton';
 import {ContentLists} from '../../../../components/contents/ListComponent/FlatList';
 
-export const ListPage = ({navigation}) => {
+export const ListContent = () => {
   const myListData = [
     {
       id: 1,
@@ -63,7 +62,6 @@ export const ListPage = ({navigation}) => {
 
   return (
     <View style={styles.content}>
-      <ListButton navigation={navigation} />
       <ContentLists myListData={myListData} />
     </View>
   );

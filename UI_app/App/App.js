@@ -9,14 +9,15 @@ import {
   View,
 } from 'react-native';
 import RootStackScreen from '../navigations/';
-import {Scrrens} from '../scrrens/index';
+import {Screen} from '../scrrens/index';
 
 export const App = () => {
   return (
     <View style={styles.appStyle}>
       <SafeAreaView style={{flex: 1}}>
-          <RootStackScreen />
-          <Scrrens />
+        <RootStackScreen>
+          <Screen />
+        </RootStackScreen>
       </SafeAreaView>
     </View>
   );

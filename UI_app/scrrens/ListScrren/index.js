@@ -1,14 +1,14 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import { Header } from '../layout/header'; 
-import { ListPage } from '../layout/content/list';
+import {View, Text} from 'react-native';
+import { Header } from '../layout/header';
+import { ListContent } from '../layout/content/list';
 import { Footer } from '../layout/footer';
 
-export const ListScrren = ({navigation}) => {
+export const ListScrren = () => {
   return (
     <View style={{flex: 1}}>
       <Header />
-      <ListPage navigation={navigation} />
+      <ListContent />
       <Footer />
     </View>
   );

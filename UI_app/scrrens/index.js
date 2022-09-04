@@ -2,12 +2,14 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { Header } from './layout/header';
 import { Footer } from './layout/footer';
-import { ListScrren } from './ListScrren';
+import { HomeContent } from './layout/content/home';
 
-export const Scrrens = () => {
+export const Screen = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
-        <ListScrren />
+        <Header />
+        <HomeContent navigation={navigation} />
+        <Footer />
     </View>
   );
 };

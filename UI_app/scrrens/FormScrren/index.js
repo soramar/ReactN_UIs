@@ -1,15 +1,14 @@
-import React from "react";
-import {View, Text, StyleSheet} from "react-native";
-import { Header } from "../layout/header";
-import { Forms } from "../layout/content/forms";
-import { Footer } from "../layout/footer";
+import React from 'react';
+import {View, Text} from 'react-native';
+import { Header } from '../layout/header';
+import { FormContent } from '../layout/content/forms';
+import { Footer } from '../layout/footer';
 
-export const FormScrren = ({navigation}) => {
+export const FormScrren = () => {
   return (
-    <View>
-      <Header />
-      <Forms />
+    <View style={{flex: 1}}>
+      <FormContent />
       <Footer />
     </View>
   );
-}
+};

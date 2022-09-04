@@ -12,6 +12,8 @@ export const Footer = () => {
 const styles = StyleSheet.create({
   footer: {
     flex: 0.15,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'azure',
   },
 });
