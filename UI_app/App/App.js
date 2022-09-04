@@ -8,13 +8,15 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import RootStackScreen from '../navigations/';
 import {Scrrens} from '../scrrens/index';
 
 export const App = () => {
   return (
     <View style={styles.appStyle}>
       <SafeAreaView style={{flex: 1}}>
-        <Scrrens />
+          <RootStackScreen />
+          <Scrrens />
       </SafeAreaView>
     </View>
   );

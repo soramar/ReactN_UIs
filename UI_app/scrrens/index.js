@@ -1,15 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {Header} from './header';
-import {Content} from './content';
-import {Footer} from './footer';
+import { Header } from './layout/header';
+import { Footer } from './layout/footer';
+import { ListScrren } from './ListScrren';
 
 export const Scrrens = () => {
   return (
     <View style={{flex: 1}}>
-      <Header />
-      <Content />
-      <Footer />
+        <ListScrren />
     </View>
   );
 };

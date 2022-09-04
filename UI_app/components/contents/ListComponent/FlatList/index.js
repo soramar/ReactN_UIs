@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, FlatList, StyleSheet} from 'react-native';
+import {View, Text, FlatList, Button, StyleSheet} from 'react-native';
 
 export const ContentLists = ({myListData}) => {
   console.log('リストデータ', myListData);
@@ -11,14 +11,14 @@ export const ContentLists = ({myListData}) => {
         renderItem={ContentList}
         keyExtractor={listData => listData.id}
       />
-    </View>
+    </View> 
   );
 };
 
 const ContentList = listData => {
   return (
-    <View style={styles.contentView}>
-      <View style={styles.contentList}>
+    <View style={styles.contentList}>
+      <View style={styles.contentOnceData}>
         <Text style={styles.listText}>{listData.item.title}</Text>
       </View>
     </View>
@@ -27,16 +27,18 @@ const ContentList = listData => {
 
 const styles = StyleSheet.create({
   contentLists: {
-    // flex: 1,
-    backgroundColor: 'blue',
-  },
-  contentView: {
-    // flex: 1,
+    flex: 1,
+    justifyContent: 'center',
+    // backgroundColor: 'green',
   },
   contentList: {
-    // flex: 0.5,
-    // backgroundColor: 'yellow',
     left: '40%',
+    flex: 1,
+    // backgroundColor: 'blue',
+  },
+  contentOnceData: {
+    flex: 1,
+    // backgroundColor: 'red',
   },
   listText: {
     fontSize: 20,
