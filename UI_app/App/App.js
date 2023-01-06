@@ -47,5 +47,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-
-// git 変更
