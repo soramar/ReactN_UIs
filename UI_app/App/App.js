@@ -8,41 +8,24 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import RootStackScreen from '../navigations/';
+import {Screen} from '../scrrens/index';
 
 export const App = () => {
   return (
     <View style={styles.appStyle}>
-      <SafeAreaView>
-        <Text>テキスト</Text>
+      <SafeAreaView style={{flex: 1}}>
+        <RootStackScreen>
+          <Screen />
+        </RootStackScreen>
       </SafeAreaView>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  appStyle: {
+    flex: 1,
   },
 });
 
